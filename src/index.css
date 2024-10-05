@@ -6,9 +6,16 @@
 .sidebar::-webkit-scrollbar {
   display: none;
 }
+.rbc-time-content::-webkit-scrollbar{
+  display: none !important;
+}
 .sx__view-container::-webkit-scrollbar{
   display: none !important;
 } 
+
+.rbc-time-view{
+  border: 1px solid white !important;
+}
 
 .rdp{
   border: none !important;
@@ -116,4 +123,42 @@
   body {
     @apply bg-background text-foreground;
   }
+}
+
+
+
+
+.rbc-time-header{
+  display: none !important;
+}
+
+.rbc-time-slot{
+  color: gray;
+  font-size: 12px;
+  z-index: 1;
+  height: 36px;
+}
+
+.rbc-time-slot:not(.rbc.time-slot){
+  background-color: #f3f7fa;
+}
+
+.rbc-event,
+.rbc-background-event{
+  z-index: 2;
+  padding: 5px !important;
+  border: none !important;
+  height: 50px !important;
+  width: 120px !important;
+}
+
+.rbc-event{
+  display: flex !important;
+  flex-direction: column-reverse !important;
+  justify-content: start !important;
+  
+}
+
+.rbc-calendar{
+  margin: 0px !important;
 }

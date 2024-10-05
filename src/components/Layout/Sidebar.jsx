@@ -28,7 +28,7 @@ const Sidebar = () => {
   return (
     <>
       <span
-        className=" absolute text-white text-4xl top-11 left-4 cursor-pointer"
+        className="absolute text-white text-4xl top-11 left-4 cursor-pointer"
         onClick={() =>
           setIsSideBarMoreMenu({
             ...isSideBarMoreMenu,
@@ -41,10 +41,10 @@ const Sidebar = () => {
       <div
         className={`z-10 ${
           isSideBarMoreMenu?.isShowSidebar ? "left-[0px]" : "left-[-270px]"
-        }  md:left-0 lg:left-0 sidebar fixed top-0 bottom-0 px-4 w-[270px] overflow-y-auto text-center bg-[white] py-24 shadow-2xl`}
+        } left-[-270px] lg:left-0 sidebar fixed top-0 bottom-0 px-4 w-[270px] overflow-y-auto text-center bg-[white] py-24 shadow-2xl`}
       >
         <span
-          className="absolute right-7 top-14 cursor-pointer md:hidden"
+          className="absolute right-7 top-14 cursor-pointer lg:hidden"
           onClick={() =>
             setIsSideBarMoreMenu({
               ...isSideBarMoreMenu,

@@ -14,8 +14,8 @@ const CalendarMain = () => {
   const [isFilter, setIsFilter] = useState("all");
 
   return (
-    <div className="mt-2 px-4 flex flex-col md:ml-[260px] ml-0">
-      <div className="px-4 md:px-0">
+    <div className="flex flex-col ml-0 lg:ml-[300px] w-full">
+      <div className="px-4 md:px-0 mt-5">
         <p className="text-md flex justify-start items-center gap-2 text-gray-400">
           <span className="cursor-pointer">
             <FaArrowLeftLong />
@@ -87,8 +87,8 @@ const CalendarMain = () => {
         </div>
       </div>
 
-      <div className="bg-white flex flex-col px-4 md:px-0">
-        <div className="h-24 flex justify-between items-center">
+      <div className="bg-[white] rounded-lg flex flex-col px-4 md:px-0 w-full">
+        <div className="h-24 flex justify-between items-center px-3 border-b-2 border-gray-400">
           <div className="ml-0 md:ml-14">
             <h1 className="font-semibold text-2xl underline decoration-slate-300">
               Calendar
@@ -105,12 +105,15 @@ const CalendarMain = () => {
           </div>
         </div>
 
-        <div className="flex flex-col md:flex-row justify-between h-full w-full">
-          <div className="w-full md:w-[70%]">
+        <div className="flex flex-col md:flex-row justify-between items-start p-3 gap-2">
+          <div className="w-full">
             <SchedulerCalendar />
           </div>
-          <div className="w-full md:w-[30%] flex flex-col px-3 mt-5 md:mt-0">
-            <div className="w-full">
+
+
+
+          <div className="h-full flex flex-col sm:flex-col sm:justify-center md:flex-col justify-between items-start md:mt-0">
+            <div className="mt-14">
               <Calendar
                 mode="single"
                 selected={date}
@@ -119,10 +122,10 @@ const CalendarMain = () => {
               />
             </div>
 
-            <div className="mt-5 flex flex-col">
+            <div className="flex flex-col w-full mt-5">
               <h1 className="font-semibold text-lg">Schedule</h1>
               <div className="flex flex-col mt-2 space-y-3">
-                <div className="flex flex-wrap justify-between items-center">
+                <div className="flex flex-wrap justify-start lg:justify-between items-center">
                   <p className="bg-[#FFDCDC] px-2 rounded-full text-sm m-1">
                     Listen
                   </p>
@@ -138,7 +141,39 @@ const CalendarMain = () => {
                 </div>
               </div>
               <div className="flex flex-col mt-2 space-y-3">
-                <div className="flex flex-wrap justify-between items-center">
+                <div className="flex flex-wrap justify-start lg:justify-between items-center">
+                  <p className="bg-[#FFDCDC] px-2 rounded-full text-sm m-1">
+                    Listen
+                  </p>
+                  <p className="bg-[#FFDCDC] px-2 rounded-full text-sm m-1">
+                    Learn
+                  </p>
+                  <p className="bg-[#FFEBD4] px-2 rounded-full text-sm m-1">
+                    Work-Out
+                  </p>
+                  <p className="bg-[#EAFFDC] px-2 rounded-full text-sm m-1">
+                    Study
+                  </p>
+                </div>
+              </div>
+              <div className="flex flex-col mt-2 space-y-3">
+                <div className="flex flex-wrap justify-start lg:justify-between items-center">
+                  <p className="bg-[#FFDCDC] px-2 rounded-full text-sm m-1">
+                    Listen
+                  </p>
+                  <p className="bg-[#FFDCDC] px-2 rounded-full text-sm m-1">
+                    Learn
+                  </p>
+                  <p className="bg-[#FFEBD4] px-2 rounded-full text-sm m-1">
+                    Work-Out
+                  </p>
+                  <p className="bg-[#EAFFDC] px-2 rounded-full text-sm m-1">
+                    Study
+                  </p>
+                </div>
+              </div>
+              <div className="flex flex-col mt-2 space-y-3">
+                <div className="flex flex-wrap justify-start lg:justify-between items-center">
                   <p className="bg-[#FFDCDC] px-2 rounded-full text-sm m-1">
                     Listen
                   </p>
@@ -155,7 +190,7 @@ const CalendarMain = () => {
               </div>
             </div>
 
-            <div className="mt-10 flex flex-col">
+            <div className="w-full flex flex-col mt-5">
               <h1 className="font-semibold text-lg flex justify-between items-center">
                 <span>Music</span>
                 <span>
@@ -164,12 +199,12 @@ const CalendarMain = () => {
               </h1>
 
               <div className="flex flex-col space-y-5 mt-5">
-                <div className="flex flex-col md:flex-row justify-between items-start">
+                <div className="flex flex-col md:flex-row justify-between items-center">
                   <div className="whitespace-nowrap">Ronald rich playlist</div>
                   <Switch />
                   <AiTwotoneDelete className="text-2xl cursor-pointer" />
                 </div>
-                <div className="flex flex-col md:flex-row justify-between items-start">
+                <div className="flex flex-col md:flex-row justify-between items-center">
                   <div className="whitespace-nowrap">Ronald rich playlist</div>
                   <Switch />
                   <AiTwotoneDelete className="text-2xl cursor-pointer" />

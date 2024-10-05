@@ -10,10 +10,10 @@ const Header = () => {
   return (
     <div className="h-12 w-full flex justify-between px-5">
       {/* Input for large screens */}
-      <div className="w-[50%] flex justify-end py-1"></div>
+      <div className=" flex justify-end py-1"></div>
 
       {/* Input for extra-large screens */}
-      <div className="w-[50%] flex justify-between py-1 gap-4">
+      <div className=" flex justify-between py-1 gap-4">
         <div className="hidden lg:flex justify-center items-center bg-white shadow-md rounded-2xl">
           <input
             type="text"

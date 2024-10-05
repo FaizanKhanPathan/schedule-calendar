@@ -10,8 +10,10 @@ function App() {
     <>
       <div className="py-10 px-4 relative">
         <Header />
+        <div className="flex flex-row">
         <Sidebar />
         <CalendarMain/>
+        </div>
       </div>
     </>
   );
