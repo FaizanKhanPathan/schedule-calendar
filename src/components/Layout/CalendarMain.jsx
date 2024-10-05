@@ -110,8 +110,6 @@ const CalendarMain = () => {
             <SchedulerCalendar />
           </div>
 
-
-
           <div className="h-full flex flex-col sm:flex-col sm:justify-center md:flex-col justify-between items-start md:mt-0">
             <div className="mt-14">
               <Calendar
@@ -201,13 +199,23 @@ const CalendarMain = () => {
               <div className="flex flex-col space-y-5 mt-5">
                 <div className="flex flex-col md:flex-row justify-between items-center">
                   <div className="whitespace-nowrap">Ronald rich playlist</div>
-                  <Switch />
-                  <AiTwotoneDelete className="text-2xl cursor-pointer" />
+                  <Switch className="md:block hidden" />
+
+                  <AiTwotoneDelete className="text-2xl cursor-pointer md:block hidden" />
+                  <div className="gap-3 mt-1 md:hidden block flex justify-center">
+                    <Switch />
+                    <AiTwotoneDelete className="text-2xl cursor-pointer md:block" />
+                  </div>
                 </div>
                 <div className="flex flex-col md:flex-row justify-between items-center">
                   <div className="whitespace-nowrap">Ronald rich playlist</div>
-                  <Switch />
-                  <AiTwotoneDelete className="text-2xl cursor-pointer" />
+                  <Switch className="md:block hidden" />
+
+                  <AiTwotoneDelete className="text-2xl cursor-pointer md:block hidden" />
+                  <div className="gap-3 mt-1 md:hidden block flex justify-center">
+                    <Switch />
+                    <AiTwotoneDelete className="text-2xl cursor-pointer md:block" />
+                  </div>
                 </div>
               </div>
 

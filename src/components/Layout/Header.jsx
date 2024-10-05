@@ -25,7 +25,7 @@ const Header = () => {
         </div>
         <div className="w-full flex justify-end items-center">
           <div className="flex justify-end items-center gap-5">
-            <p>Premium</p>
+            <p className="hidden sm:block">Premium</p>
             <div className="relative">
               <span className="absolute left-3 top-[12px]">
                 <IoMdDownload className="text-white" />

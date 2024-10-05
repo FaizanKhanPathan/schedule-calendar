@@ -181,6 +181,7 @@ import { MdOutlineEdit } from "react-icons/md";
 import { RiDeleteBinLine } from "react-icons/ri";
 import { ImCancelCircle } from "react-icons/im";
 import { FaRegCalendar } from "react-icons/fa";
+import { FaPlus } from "react-icons/fa6";
 
 import { Calendar, dateFnsLocalizer } from "react-big-calendar";
 import format from "date-fns/format";
@@ -276,7 +277,7 @@ const SchedulerCalendar = () => {
   return (
     <div>
       <div className="flex flex-col sm:flex-row justify-between items-start sm:items-center py-2">
-        <div className="flex flex-col sm:flex-row justify-start gap-2 my-6">
+        <div className="flex flex-col sm:flex-row justify-start gap-6 my-6">
           <div className="flex justify-center items-center gap-4 cursor-pointer">
             <div
               className="border border-gray-300 px-4 py-3 rounded-sm"
@@ -338,8 +339,10 @@ const SchedulerCalendar = () => {
         </div>
         <div>
           <Button
-            className={`px-9 rounded-full shadow-xl hover:text-white bg-secondary hover:bg-secondary`}
+            variant="secondary"
+            className="flex justify-start items-center rounded-full shadow-xl gap-3 text-white text-lg"
           >
+            <FaPlus />
             Schedule session
           </Button>
         </div>
@@ -360,7 +363,10 @@ const SchedulerCalendar = () => {
           toolbar={false}
         />
       </div>
-      <Modal title="Basic Modal" open={isModalOpen}>
+
+
+      <div className="flex justify-center">
+      <Modal title="Basic Modal" centered open={isModalOpen}>
         <div>
           <div className="flex justify-end items-center gap-2 text-xl text-gray-400 ">
             <span className="cursor-pointer">
@@ -411,7 +417,7 @@ const SchedulerCalendar = () => {
           </div>
           <h1 className="text-md font-bold mt-2">Playlist</h1>
           <div className="mt-4 flex justify-start items-start gap-4">
-            <div className="w-14 h-14 bg-secondary rounded-lg"></div>
+            <div className="w-16 h-10 sm:h-16 bg-secondary rounded-lg"></div>
             <div className="text-wrap">
               <p className="text-md font-bold">Kesariya</p>
               <p className="text-wrap">
@@ -420,7 +426,7 @@ const SchedulerCalendar = () => {
             </div>
           </div>
           <div className="mt-4 flex justify-start items-start gap-4">
-            <div className="w-14 h-14 bg-secondary rounded-lg"></div>
+            <div className="w-16 h-10 sm:h-16 bg-secondary rounded-lg"></div>
             <div className="text-wrap">
               <p className="text-md font-bold">Kesariya</p>
               <p className="text-wrap">
@@ -433,6 +439,7 @@ const SchedulerCalendar = () => {
           </div>
         </div>
       </Modal>
+      </div>
     </div>
   );
 };

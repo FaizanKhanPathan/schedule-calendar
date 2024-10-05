@@ -162,3 +162,15 @@
 .rbc-calendar{
   margin: 0px !important;
 }
+
+@media only screen and (max-width: 430px) {
+  .ant-modal-content {
+    width: 370px;
+  }
+}
+
+@media only screen and (max-width: 380px) {
+  .ant-modal-content {
+    width: 290px;
+  }
+}
